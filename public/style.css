@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color: #222;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    opacity: .5;
+    object-fit: cover;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: #eee;
+}
+
+/* header */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    height: 25%;
+}
+.header-logo {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    top: 0;
+    left: 0;
+}
+.header-h1 {
+}
+.header-h1>a {
+    color: #3498DB;
+}
+
+/* main */
+.main {
+    position: relative;
+    width: 800px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main>* {
+    margin: 1rem 0;
+}
+.main-textbox {
+    width: 100%;
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    padding: 1rem;
+    height: 3rem;
+    /* margin: 1rem 0; */
+
+    text-align: center;
+    background: #eef;
+}
+.main-button {
+    width: 100%;
+    border-radius: 1.5rem;
+    /* border: 1px solid black; */
+    border: none;
+    background-color: #3498DB;
+    color: white;
+    padding: 1rem;
+    height: 3rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
+
+/* main-link */
+.main-link {
+    font-size: 2rem;
+    text-align: center;
+    min-height: 9rem;
+}
+.main-link>* {
+    display: none;
+    width: 100%;
+}
+.main-link>p {}
+.main-link>a {
+    color: #3498DB;
+    word-break: break-all;
+}
+.main-link>div {
+    color: tomato;
+}
+.main-link-display>p, .main-link-display>a
+,.main-link-none>div {
+    display: block;
+}
+/* .main-caution {
+    color: tomato;
+    text-align: center;
+} */
+
+/* aside */
+.aside {
+    position: relative;
+    height: 15%;
+}
+.aside-message {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.aside-message>a {
+    color: #3498DB;
+}
+
+@media (max-width: 896px) {
+    .header-h1 {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+    .main {
+        width: 100%;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}

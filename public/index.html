@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <link rel="alternate" hreflang="ja" lang="ja" href="https://addroyalefriends.deta.dev/ja/"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <title>Add clash royale friends</title>
+  <script>
+    const time = new Date().getTime();
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="../storage/logo.ico">
+  <script src="./script.js"></script>
+  <!-- AdSence -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8457332927893615" crossorigin="anonymous"></script>
+</head>
+<body>
+  <video
+    class="background" muted autoplay loop playsinline 
+    src="../storage/background.mp4"
+  ></video>
+  <section class="wrapper">
+    <header class="header">
+      <!-- <img class="header-logo" src="https://drive.deta.sh/v1/c0q0dw6g/photos/files/download?name=logo-min.png" onerror="loadImgSrc(event)"/> -->
+      <img class="header-logo" src="../storage/logo.png"/>
+      <h1 class="header-h1">Add your <a href="https://clashroyale.com/">CLASH ROYALE</a> friends by entering their tag.</h1>
+    </header>
+    <article class="main">
+      <input
+        id="tag-input" class="main-textbox" type="text"
+        placeholder="Player tag: #GYVCJJCR2"
+        onkeyup="createURL();"
+        onchange="createURL();"
+        onkeydown="if (event.key === 'Enter') this.blur();"
+      />
+      <!-- <button class="main-button" onclick="createURL();">click</button> -->
+      <div id="url-area" class="main-link">
+        <p>Let's click this link to add a new friend.</p>
+        <a id="url" href="" aria-disabled="true" target="_blank" rel="noopener noreferrer">yet</a>
+        <div id="caution" class="main-caution">Invalid Hashtag Provided.</div>
+      </div>
+    </article>
+    <aside class="aside">
+      <p class="aside-message">This app is a <a href="https://supercell.com/en/fan-content-policy/">fan content</a>. Created by <a href="https://twitter.com/awoniyoshi00">awoniyoshi00</a>.</p>
+    </aside>
+  </section>
+  <!-- AdSence Place ? -->
+</body>
+</html>
